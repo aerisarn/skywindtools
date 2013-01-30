@@ -5,7 +5,8 @@ All rights reserved.  Please see niflib.h for license. */
 #define PRINT_OBJECT_NAMES
 #define PRINT_OBJECT_CONTENTS
 #define DEBUG_LINK_PHASE
-#define DEBUG_HEADER_FOOTER
+//Printing header and footer modify internal values
+//#define DEBUG_HEADER_FOOTER
 
 #include "../include/niflib.h"
 #include "../include/NIF_IO.h"

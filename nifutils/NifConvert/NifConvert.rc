@@ -1,0 +1,207 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// German (Germany) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_DEU)
+LANGUAGE LANG_GERMAN, SUBLANG_GERMAN
+#pragma code_page(1252)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_DEU)\r\n"
+    "LANGUAGE 7, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""res\\NifConvert.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""     // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\NifConvert.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_NIFCONVERT_DIALOG DIALOGEX 0, 0, 299, 301
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "NifConMerge 0.1"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    COMBOBOX        IDC_COMBO_TEMPLATE,85,64,180,72,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_TEXTURE,85,82,180,72,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Remove flag",IDC_RADIO_VCREMOVE,"Button",BS_AUTORADIOBUTTON | WS_GROUP,13,167,56,10
+    CONTROL         "Generate default color 0xFFFFFF",IDC_RADIO_VCADD,"Button",BS_AUTORADIOBUTTON,13,179,122,10
+    PUSHBUTTON      "Exit",IDCANCEL,7,282,50,16
+    LTEXT           "Template (Skyrim):",IDC_STATIC,13,64,69,12,SS_CENTERIMAGE
+    LTEXT           "Texture path:",IDC_STATIC,13,82,69,12,SS_CENTERIMAGE
+    GROUPBOX        " VertexColorFlag vs. VertexColors ",IDC_STATIC,7,155,132,36
+    GROUPBOX        " Various flags ",IDC_STATIC,145,155,150,36
+    CONTROL         "Update tangent space",IDC_CHECK_TANGENTSPACE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,151,167,87,10
+    CONTROL         "Reorder NiTriShape Properties",IDC_CHECK_NITRISHAPEPROPERTIES,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,151,179,113,10
+    CONTROL         "",IDC_RICHEDIT_LOG,"RichEdit20W",ES_MULTILINE | ES_AUTOHSCROLL | WS_BORDER | WS_VSCROLL | WS_HSCROLL | WS_TABSTOP,7,197,285,78
+    PUSHBUTTON      "...",IDC_BUTTON_TEMPLATE,271,64,19,14
+    PUSHBUTTON      "...",IDC_BUTTON_TEXTURE,271,82,19,14
+    EDITTEXT        IDC_EDIT_DIRINPUT,85,27,180,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_BUTTON_DIRINPUT,271,27,19,14
+    EDITTEXT        IDC_EDIT_DIROUTPUT,85,46,180,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_BUTTON_DIROUTPUT,271,46,19,14
+    LTEXT           "In-Dir (Morrowind):",IDC_STATIC,13,27,69,12,SS_CENTERIMAGE
+    LTEXT           "Out-Dir (Skyrim):",IDC_STATIC,13,46,69,12,SS_CENTERIMAGE
+    GROUPBOX        "Directories",IDC_STATIC,7,14,288,90
+    DEFPUSHBUTTON   "Convert Directory",IDOK2,214,282,77,16
+    GROUPBOX        "Collision Options",IDC_STATIC,11,103,281,52
+    CONTROL         "Merge with Collision Meshes",IDC_CHECK_DO_COLLISION,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,19,115,105,10
+    CONTROL         "Use converted nif for collision instead of *_col.nif",IDC_CHECK_USE_CONVERTED,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,19,127,173,10
+    CONTROL         "Remove *_col.nif when done",IDC_CHECK_REMOVE_CONVERTED,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,19,138,109,10
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "CompanyName", "TODO: <Company name>"
+            VALUE "FileDescription", "TODO: <File description>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "NifConvert.exe"
+            VALUE "LegalCopyright", "TODO: (c) <Company name>.  All rights reserved."
+            VALUE "OriginalFilename", "NifConvert.exe"
+            VALUE "ProductName", "TODO: <Product name>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_NIFCONVERT_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 292
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 294
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU_POPUP MENU
+BEGIN
+    POPUP "Default"
+    BEGIN
+        MENUITEM "Reload Directories",          ID_DEFAULT_RELOADDIRECTORIES
+        MENUITEM "Save Settings",               ID_DEFAULT_SAVESETTINGS
+    END
+END
+
+#endif    // German (Germany) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_DEU)
+LANGUAGE 7, 1
+#pragma code_page(1252)
+#include "res\NifConvert.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"     // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
